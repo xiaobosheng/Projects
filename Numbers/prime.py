@@ -31,10 +31,7 @@ def primes(n):
        primfac.append(n)
     return primfac
 
-startTime = datetime.now()
-prime_factor(4487802352351)
-print(datetime.now()-startTime)
-startTime = datetime.now()
-primes(4487802352351)
-print(datetime.now()-startTime)
+if __name__ == "__main__":
+    n = raw_input("Enter a prime number: ")
+    print prime_factor(int(n))
 
